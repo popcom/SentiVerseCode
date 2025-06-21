@@ -1,0 +1,8 @@
+<form [formGroup]="form" (ngSubmit)="submit()" class="capture-form">
+  <textarea formControlName="text" rows="3" placeholder="How are you feeling?"></textarea>
+  <button type="submit" [disabled]="form.invalid">Analyze</button>
+</form>
+<div *ngIf="result" class="result">
+  <p>Detected Emotion: {{ result.emotion }}</p>
+  <button (click)="join()">Join Group</button>
+</div>
