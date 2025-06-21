@@ -52,3 +52,13 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+# Flutter
+**/build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-deps
+.packages
+.pub-cache/
+**/pubspec.lock
+**/.idea/
+**/.vscode/
